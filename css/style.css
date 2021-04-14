@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    overflow:auto;
+}
+body{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-container{
+    background-color: rgb(38, 39, 110);
+    color: white;
+}
+
+.nav-ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 0px; /*prevent space being reserved when converted to inline*/
+}
+
+.nav-ul li{
+    padding: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    transition: background-color 0.4s;
+}
+
+.nav-ul li:hover {
+    background-color: white;
+    color:  rgb(29, 30, 100);
+}
+
+
+.img-container{
+    background-image: url('../images/background-image-1.jpg');
+    background-position: center center; 
+    background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 200px; 
+}
+
+.img-text{
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+}
+
+form input{
+    padding: 1.2em .25em 1.2em ;
+    width: 80%;
+    margin: 10px auto;
+    /* box-sizing: border-box; */
+}
+.input-class{  
+    margin-left: 20px;
+}
+
+#input_1_7{
+    width: 80%;
+ 
+}
+#input_1_8{
+    width: 30%;
+    margin-left: 20px;
+}
+
+
+
+
+@media screen and (min-width: 700px){ /*u need a mininum of 700 to have this kind of styling*/
+    .nav ul{
+        text-align: center;
+    }
+    .nav-ul li{
+        display: inline-block;
+        border-bottom: 0px;
+    }
+
+    .form-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #input_1_7{
+        width: 90%;
+    }
+    #input_1_8{
+        width: 10%;
+    }
+
+}
