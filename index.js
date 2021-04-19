@@ -1,12 +1,3 @@
-// const info= {
-//     input_1_1: "invalid first name",
-//     input_1_2: "invalid last name",
-//     input_1_3: "invalid email",
-//     input_1_4: "invalid phone number",
-//     input_1_5: "invalid website",
-//     input_1_6: "invalid company",
-
-// }
 const userInputs = document.querySelectorAll('.input-flip');
 const userInputArray = [];
 
@@ -38,7 +29,7 @@ function submitButtonHandler(){
         userInputArray.push(input.value);  
     }
     // none of the items must be empty in order for the alert() to run
-    if(!userInputArray.includes("") && numTotal == 10){
+    if(!userInputArray.includes("")){
         alert(userInputArray);
     }     
 
